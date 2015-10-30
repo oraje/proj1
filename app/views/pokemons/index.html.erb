@@ -1,0 +1,5 @@
+<h1>Pokemon in the Database</h1>
+<% @pokemon.each do |u| %> 
+  Name: <p> <%= link_to u.name, pokemon_path(u) %> </p>
+<% end %>
+<%= link_to "new", pokemons_new_path %> 
